@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button, Text, Title } from "rizzui";
-
 import LandingHero2 from "/public/land2.svg";
 import Link from "next/link";
 

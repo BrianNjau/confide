@@ -1,15 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
-import { PiSliders } from "react-icons/pi";
-import { Button, Title } from "rizzui";
+import { Title } from "rizzui";
 import cn from "@/utils/class-names";
-import { useDrawer } from "@/app/shared/drawer-views/use-drawer";
-import { useFilterControls } from "@/hooks/use-filter-control";
+// import { useDrawer } from "@/app/shared/drawer-views/use-drawer";
+// import { useFilterControls } from "@/hooks/use-filter-control";
 import { useSearchParams } from "next/navigation";
 import Autocomplete from "@/components/google-map/autocomplete";
-import { initialState } from "@/app/shared/explore-listing/listing-filters/filter-utils";
+// import { initialState } from "@/app/shared/explore-listing/listing-filters/filter-utils";
 import MagnifyingGlassIconColor from "@/components/icons/magnifying-glass-color";
 // const FilterDrawerView = dynamic(
 //   () => import("@/app/shared/explore-listing/listing-filters/drawer-view"),
@@ -19,11 +17,11 @@ import MagnifyingGlassIconColor from "@/components/icons/magnifying-glass-color"
 export default function ListingFilters({ className }: { className?: string }) {
   const searchParams = useSearchParams();
   const [hasQueryParams, setHasQueryParams] = useState(false);
-  const { openDrawer, closeDrawer } = useDrawer();
-  const { state, applyFilter, reset } = useFilterControls<
-    typeof initialState,
-    any
-  >(initialState);
+  // const { openDrawer, closeDrawer } = useDrawer();
+  // const { state, applyFilter, reset } = useFilterControls<
+  //   typeof initialState,
+  //   any
+  // >(initialState);
 
   useEffect(() => {
     const items = [];

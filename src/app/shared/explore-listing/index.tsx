@@ -2,29 +2,29 @@
 
 import { useState } from "react";
 import { Button, Empty, SearchNotFoundIcon } from "rizzui";
-import ListingCard from "@/components/cards/listing-card";
-import hasSearchedParams from "@/utils/has-searched-params";
-import { filterProductsData } from "@/data/filter-products-data";
+// import ListingCard from "@/components/cards/listing-card";
+// import hasSearchedParams from "@/utils/has-searched-params";
+// import { filterProductsData } from "@/data/filter-products-data";
 // Note: using shuffle to simulate the filter effect
-import shuffle from "lodash/shuffle";
+// import shuffle from "lodash/shuffle";
 
 let countPerPage = 12;
 
 export default function ProductsGrid() {
-  const [isLoading, setLoading] = useState(false);
-  const [nextPage, setNextPage] = useState(countPerPage);
+  // const [isLoading, setLoading] = useState(false);
+  // const [nextPage, setNextPage] = useState(countPerPage);
 
-  function handleLoadMore() {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setNextPage(nextPage + countPerPage);
-    }, 600);
-  }
+  // function handleLoadMore() {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     setNextPage(nextPage + countPerPage);
+  //   }, 600);
+  // }
 
-  const filteredData = hasSearchedParams()
-    ? shuffle(filterProductsData)
-    : filterProductsData;
+  // const filteredData = hasSearchedParams()
+  //   ? shuffle(filterProductsData)
+  //   : filterProductsData;
 
   return (
     <>

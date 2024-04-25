@@ -1,8 +1,8 @@
-import { useAtomValue } from "jotai";
+// import { useAtomValue } from "jotai";
 import { useTheme } from "next-themes";
 
 import { useEffect, useRef, useState } from "react";
-import { atomWithReset, useResetAtom } from "jotai/utils";
+// import { atomWithReset, useResetAtom } from "jotai/utils";
 import { Input, InputProps, Loader as Spinner } from "rizzui";
 import cn from "@/utils/class-names";
 

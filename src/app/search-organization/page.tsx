@@ -1,4 +1,3 @@
-import { routes } from "@/config/routes";
 import PageHeader from "@/app/shared/page-header";
 import ProductsGrid from "@/app/shared/explore-listing";
 import ListingFilters from "@/app/shared/explore-listing/listing-filters";

@@ -12,7 +12,7 @@ export const siteConfig = {
   description: `Confide is a robust whistleblowing management system to fortify compliance.
   .`,
   logo: logoImg,
-  // icon: logoIconImg,
+  icon: logoImg,
   mode: MODE.LIGHT,
   layout: LAYOUT_OPTIONS.HYDROGEN,
   // TODO: favicon

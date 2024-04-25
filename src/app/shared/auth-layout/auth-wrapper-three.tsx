@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import logoImg from '@public/logo-short.svg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button, Title } from 'rizzui';
-import cn from '@/utils/class-names';
-import { PiArrowLeftBold } from 'react-icons/pi';
-import { FcGoogle } from 'react-icons/fc';
-import { BsFacebook } from 'react-icons/bs';
-import OrSeparation from '@/app/shared/auth-layout/or-separation';
+import logoImg from "@public/logo-short.svg";
+import Image from "next/image";
+import Link from "next/link";
+import { Button, Title } from "rizzui";
+import cn from "@/utils/class-names";
+import { PiArrowLeftBold } from "react-icons/pi";
+import { FcGoogle } from "react-icons/fc";
+import { BsFacebook } from "react-icons/bs";
+import OrSeparation from "@/app/shared/auth-layout/or-separation";
 
 export default function AuthWrapperThree({
   children,
   title,
   isSocialLoginActive = false,
   isSignIn = false,
-  className = '',
+  className = "",
 }: {
   children: React.ReactNode;
   title: React.ReactNode;
@@ -27,7 +27,7 @@ export default function AuthWrapperThree({
     <>
       <div className="relative flex min-h-screen w-full flex-col justify-center bg-gradient-to-tr from-[#136A8A] to-[#267871] p-4 md:p-12 lg:p-28">
         <Link
-          href={'/'}
+          href={"/"}
           className="mb:pb-3 start-4 z-10 flex items-center justify-center pb-6 pt-3 text-sm font-medium text-white/80 hover:text-white md:absolute md:top-1/2 md:-translate-y-1/2 md:rounded-full "
         >
           <PiArrowLeftBold />
@@ -35,12 +35,12 @@ export default function AuthWrapperThree({
         </Link>
         <div
           className={cn(
-            'mx-auto w-full max-w-md rounded-xl bg-white px-4 py-9 sm:px-6 md:max-w-xl md:px-10 md:py-12 lg:max-w-[700px] lg:px-16 xl:rounded-2xl 3xl:rounded-3xl dark:bg-gray-50',
+            "mx-auto w-full max-w-md rounded-xl bg-white px-4 py-9 sm:px-6 md:max-w-xl md:px-10 md:py-12 lg:max-w-[700px] lg:px-16 xl:rounded-2xl 3xl:rounded-3xl dark:bg-gray-50",
             className
           )}
         >
           <div className="flex flex-col items-center">
-            <Link href={'/'} className="mb-7 inline-block max-w-[64px] lg:mb-9">
+            <Link href={"/"} className="mb-7 inline-block max-w-[64px] lg:mb-9">
               <Image src={logoImg} alt="Isomorphic" className="dark:invert" />
             </Link>
             <Title
@@ -63,7 +63,7 @@ export default function AuthWrapperThree({
                 </Button>
               </div>
               <OrSeparation
-                title={`Or, Sign ${isSignIn ? 'in' : 'up'} with your email`}
+                title={`Or, Sign ${isSignIn ? "in" : "up"} with your email`}
                 isCenter
                 className="mb-4"
               />

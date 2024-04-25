@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { Avatar, Title, Text, Button } from 'rizzui';
-import cn from '@/utils/class-names';
-import logoImg from '@public/logo-short.svg';
-import starImg from '@public/auth/star.svg';
-import { usePathname } from 'next/navigation';
-import { routes } from '@/config/routes';
-import ArrowShape from '@/components/shape/arrow';
-import OrSeparation from './or-separation';
+import Link from "next/link";
+import Image from "next/image";
+import { Avatar, Title, Text, Button } from "rizzui";
+import cn from "@/utils/class-names";
+import logoImg from "@public/logo-short.svg";
+import starImg from "@public/auth/star.svg";
+import { usePathname } from "next/navigation";
+import { routes } from "@/config/routes";
+import ArrowShape from "@/components/shape/arrow";
+import OrSeparation from "./or-separation";
 import {
   PiAppleLogoFill,
   PiArrowLeftBold,
@@ -20,8 +20,8 @@ import {
   PiTwitterLogo,
   PiArrowLineRight,
   PiUserCirclePlus,
-} from 'react-icons/pi';
-import { FcGoogle } from 'react-icons/fc';
+} from "react-icons/pi";
+import { FcGoogle } from "react-icons/fc";
 
 export default function AuthWrapperTwo({
   children,
@@ -53,7 +53,7 @@ export default function AuthWrapperTwo({
                   <SocialAuth />
                   <OrSeparation
                     className="mb-8 xl:mb-7 dark:before:bg-gray-200 dark:[&>span]:bg-[#191919]"
-                    title={`OR ${isSignIn ? 'LOGIN' : 'SIGN UP'} WITH`}
+                    title={`OR ${isSignIn ? "LOGIN" : "SIGN UP"} WITH`}
                   />
                 </>
               )}
@@ -85,7 +85,7 @@ function AuthNavLink({
       href={href}
       className={cn(
         "before:bg-primary-light relative flex items-center gap-x-1.5 text-[15px] font-medium text-gray-700 transition-colors duration-200 before:absolute before:bottom-0 before:start-0 before:h-0.5 before:content-[''] hover:text-gray-900 xl:gap-x-2.5 xl:px-6 xl:py-0.5 xl:text-base xl:before:top-0 xl:before:h-full 2xl:px-9 [&>svg]:w-[22px] [&>svg]:shrink-0 xl:[&>svg]:w-6",
-        isActive(href) ? 'before:w-full xl:before:w-1' : ' '
+        isActive(href) ? "before:w-full xl:before:w-1" : " "
       )}
     >
       {children}
@@ -110,7 +110,7 @@ function AuthNavBar() {
         </AuthNavLink>
       </div>
       <Link
-        href={'/'}
+        href={"/"}
         className="relative hidden items-center gap-x-1.5 text-[15px] font-medium text-gray-700 transition-colors duration-200 hover:text-gray-1000 xl:mt-auto xl:flex xl:gap-x-1.5 xl:py-0.5 xl:pe-6 xl:ps-3 xl:text-base xl:text-gray-500 xl:before:top-0 xl:before:h-full xl:hover:text-gray-700 2xl:pe-9 2xl:ps-7 [&>svg]:w-[22px] [&>svg]:shrink-0 xl:[&>svg]:w-6"
       >
         <PiArrowLeftBold />
@@ -143,7 +143,7 @@ function IntroBannerBlock() {
           fill
           priority
           src={
-            'https://isomorphic-furyroad.s3.amazonaws.com/public/auth/sign-in-bg2.webp'
+            "https://isomorphic-furyroad.s3.amazonaws.com/public/auth/sign-in-bg2.webp"
           }
           alt="Sign Up Thumbnail"
           sizes="(max-width: 768px) 100vw"
@@ -178,28 +178,28 @@ function IntroBannerBlock() {
 
 const socialLinks = [
   {
-    title: 'Facebook',
-    link: 'https://www.facebook.com/redqinc',
+    title: "Facebook",
+    link: "https://www.facebook.com/redqinc",
     icon: <PiFacebookLogo className="h-auto w-4" />,
   },
   {
-    title: 'Twitter',
-    link: 'https://twitter.com/RedqTeam',
+    title: "Twitter",
+    link: "https://twitter.com/RedqTeam",
     icon: <PiTwitterLogo className="h-auto w-4" />,
   },
   {
-    title: 'Instagram',
-    link: 'https://www.instagram.com/redqteam/',
+    title: "Instagram",
+    link: "https://www.instagram.com/redqteam/",
     icon: <PiInstagramLogo className="h-auto w-4" />,
   },
   {
-    title: 'Linkedin',
-    link: 'https://www.linkedin.com/company/redqinc/',
+    title: "Linkedin",
+    link: "https://www.linkedin.com/company/redqinc/",
     icon: <PiLinkedinLogo className="h-auto w-4" />,
   },
   {
-    title: 'Dribbble',
-    link: 'https://dribbble.com/redqinc',
+    title: "Dribbble",
+    link: "https://dribbble.com/redqinc",
     icon: <PiDribbbleLogo className="h-auto w-4" />,
   },
 ];
@@ -222,11 +222,11 @@ function SocialLinks() {
 }
 
 const members = [
-  'https://randomuser.me/api/portraits/women/40.jpg',
-  'https://randomuser.me/api/portraits/women/41.jpg',
-  'https://randomuser.me/api/portraits/women/42.jpg',
-  'https://randomuser.me/api/portraits/women/43.jpg',
-  'https://randomuser.me/api/portraits/women/44.jpg',
+  "https://randomuser.me/api/portraits/women/40.jpg",
+  "https://randomuser.me/api/portraits/women/41.jpg",
+  "https://randomuser.me/api/portraits/women/42.jpg",
+  "https://randomuser.me/api/portraits/women/43.jpg",
+  "https://randomuser.me/api/portraits/women/44.jpg",
 ];
 function JoinedMember() {
   return (
